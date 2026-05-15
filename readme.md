@@ -1,13 +1,7 @@
-# Cuadro de Mando Integral: Plataforma Web de Citas Médicas - SaludVital
-
-Este documento presenta la propuesta de indicadores clave de rendimiento (KPIs) para evaluar la eficiencia, estabilidad, operatividad y aceptación de la nueva plataforma web de citas de la clínica **SaludVital**. El enfoque es puramente teórico, estratégico y orientado a metas numéricas concretas.
-
----
-
-## 1. KPIs de Negocio (Impacto Estratégico y Financiero)
+## 1. KPIs de Negocio
 Buscan medir cómo la plataforma impacta la rentabilidad de la clínica, la optimización de recursos y la reducción de la sobrecarga del canal telefónico tradicional.
 
-### 1.1 Tasa de Ausentismo Médico (No-Show)
+### 1.1 Tasa de Ausentismo Médico
 * **Definición:** Mide la proporción de citas médicas programadas que finalmente quedan vacías debido a que el paciente no asiste o no cancela con la debida anticipación.
 * **Meta:** Menos del **8%** de inasistencias generales.
 * **Análisis de Desviaciones:** Si este indicador se mantiene alto, significa que los recordatorios automáticos no están capturando la atención del paciente o que los canales elegidos para la notificación están siendo ignorados.
@@ -39,16 +33,16 @@ Buscan medir cómo la plataforma impacta la rentabilidad de la clínica, la opti
 
 ---
 
-## 2. KPIs Técnicos (Rendimiento y Estabilidad del Sistema)
+## 2. KPIs Técnicos
 Garantizan que la infraestructura tecnológica sea sólida, segura y capaz de soportar la demanda operativa sin interrupciones.
 
-### 2.1 Disponibilidad del Sistema (Uptime)
+### 2.1 Disponibilidad del Sistema
 * **Definición:** El porcentaje de tiempo total en el mes durante el cual la plataforma web se encuentra en pleno funcionamiento y accesible para los usuarios.
 * **Meta:** Igual o mayor al **99.9%** del tiempo mensual.
 * **Análisis de Desviaciones:** Caídas repetidas dañan severamente la reputación de la clínica y obligan a los pacientes a regresar inmediatamente al saturado canal telefónico.
 * **Toma de Decisiones:** Migrar la arquitectura a servidores con alta disponibilidad en la nube y configurar sistemas de réplica automatizada ante fallos catastróficos.
 
-### 2.2 Tiempo de Respuesta del Servidor (TTFB)
+### 2.2 Tiempo de Respuesta del Servidor
 * **Definición:** Tiempo transcurrido desde que el paciente realiza una acción en la pantalla hasta que el servidor procesa la solicitud y envía el primer byte de respuesta.
 * **Meta:** Menos de **300ms**.
 * **Análisis de Desviaciones:** Tiempos lentos generan una percepción de que la página está rota, provocando recargas innecesarias y abandono del proceso.
@@ -74,7 +68,7 @@ Garantizan que la infraestructura tecnológica sea sólida, segura y capaz de so
 
 ---
 
-## 3. KPIs Funcionales (Eficacia y Flujo del Software)
+## 3. KPIs Funcionales
 Miden si las características diseñadas en el sistema cumplen con su cometido operativo de forma fluida y sin obstáculos lógicos.
 
 ### 3.1 Efectividad del Registro de Pacientes
@@ -109,7 +103,7 @@ Miden si las características diseñadas en el sistema cumplen con su cometido o
 
 ---
 
-## 4. KPIs de Experiencia de Usuario (UX y Satisfacción)
+## 4. KPIs de Experiencia de Usuario
 Se enfocan en medir la calidad percibida, la facilidad de uso y el nivel de satisfacción de los pacientes con el ecosistema digital.
 
 ### 4.1 Net Promoter Score (NPS) de la Plataforma
@@ -118,7 +112,7 @@ Se enfocan en medir la calidad percibida, la facilidad de uso y el nivel de sati
 * **Análisis de Desviaciones:** Un puntaje bajo o negativo indica que el sistema generó frustración o estrés en lugar de solucionar el problema de espera.
 * **Toma de Decisiones:** Analizar detalladamente los comentarios dejados por los usuarios insatisfechos ("detractores") para corregir los dolores específicos reportados.
 
-### 4.2 Escala de Esfuerzo del Cliente (Customer Effort Score - CES)
+### 4.2 Escala de Esfuerzo del Cliente
 * **Definición:** Evaluación directa donde el usuario califica el nivel de facilidad general que experimentó al realizar su trámite médico dentro del sitio.
 * **Meta:** Calificación promedio mínima de **4.3 de 5 estrellas**.
 * **Análisis de Desviaciones:** Si el esfuerzo percibido es alto, la navegación rompe con las convenciones intuitivas del diseño web moderno, confundiendo al paciente.
