@@ -1,6 +1,3 @@
-/**
- * Mock API service for SaludVital
- */
 export const api = {
     getDoctors: async (specialty) => {
         console.log(`Fetching doctors for ${specialty}...`);
