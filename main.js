@@ -126,7 +126,7 @@ const DashboardView = () => `
             <aside class="glass-card" style="height: fit-content;">
                 <div style="text-align: center; margin-bottom: 2rem;">
                     <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--primary); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">👤</div>
-                    <h3>Andrés García</h3>
+                    <h3>Saray guzmán</h3>
                     <p style="font-size: 0.8rem; color: var(--on-surface-variant)">Paciente Premium</p>
                 </div>
                 <ul style="display: flex; flex-direction: column; gap: 1rem;">
@@ -196,10 +196,12 @@ const router = {
     },
 
     cancelAppointment: (id) => {
-        if (confirm('¿Estás seguro de que deseas cancelar esta cita?')) {
+        const appt = state.appointments.find(a => a.id === id);
+        if (appt && confirm(`¿Estás seguro de que deseas cancelar tu cita de ${appt.specialty}?`)) {
             state.appointments = state.appointments.filter(a => a.id !== id);
             saveAppointments();
             router.render();
+            showNotification('Cita cancelada correctamente');
         }
     },
 
@@ -210,6 +212,21 @@ const router = {
         if (state.view === 'dashboard') main.innerHTML = DashboardView();
     }
 };
+
+// --- Helper UI Functions ---
+function showNotification(message) {
+    const toast = document.createElement('div');
+    toast.className = 'glass-card toast';
+    toast.innerHTML = `<p>🔔 ${message}</p>`;
+    document.body.appendChild(toast);
+    
+    // Simple toast animation logic
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(20px)';
+        setTimeout(() => toast.remove(), 500);
+    }, 3000);
+}
 
 // --- Initial Events ---
 document.addEventListener('DOMContentLoaded', () => {

@@ -108,6 +108,7 @@ ul {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     background: linear-gradient(to bottom right, #fff, var(--on-surface-variant));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -322,4 +323,30 @@ input:focus, select:focus {
     .nav-links {
         display: none; /* Hide for mobile demo simplicity */
     }
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    z-index: 2000;
+    animation: slideUp 0.5s ease-out;
+    border-color: var(--primary);
+    background: rgba(20, 184, 166, 0.1);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-sm);
+    backdrop-filter: blur(8px);
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
 }
