@@ -1,9 +1,3 @@
-# Cuadro de Mando Integral: Plataforma Web de Citas Médicas - SaludVital
-
-Este documento presenta la propuesta de indicadores clave de rendimiento (KPIs) para evaluar la eficiencia, estabilidad, operatividad y aceptación de la nueva plataforma web de citas de la clínica **SaludVital**. El enfoque es puramente teórico, estratégico y orientado a metas numéricas concretas.
-
----
-
 ## 1. KPIs de Negocio
 Buscan medir cómo la plataforma impacta la rentabilidad de la clínica, la optimización de recursos y la reducción de la sobrecarga del canal telefónico tradicional.
 
