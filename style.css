@@ -224,7 +224,7 @@ input, select {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--outline);
     border-radius: var(--radius-sm);
-    color: white;
+    color: rgb(200, 74, 74);
     outline: none;
     transition: var(--transition);
 }

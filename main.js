@@ -91,7 +91,6 @@ const BookingView = () => {
                             <option value="Dra. Ana Villalba">Dra. Ana Villalba</option>
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label>Fecha</label>
                         <input type="date" value="${state.selectedDate}" onchange="state.selectedDate = this.value; router.render()">
